@@ -103,7 +103,7 @@ var
 		return str.substr(0, str.length - 2);
 	})(),
 
-	tableQuery = "CREATE TABLE " + tableName + "(study_id INT NOT NULL AUTO_INCREMENT, " + fieldsString + ", PRIMARY KEY(study_id))";
+	tableQuery = "CREATE TABLE " + tableName + "(study_id INT NOT NULL AUTO_INCREMENT, added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " + fieldsString + ", PRIMARY KEY(study_id))";
 
 //Create the table
 db.query(tableQuery, function(err, rows) {
