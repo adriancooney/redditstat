@@ -1,5 +1,4 @@
-var cron = require("cron"),
-	request = require("request"),
+var request = require("request"),
 	mysql = require("mysql"),
 	fs = require("fs"),
 	Throttle = require("./Throttle");
